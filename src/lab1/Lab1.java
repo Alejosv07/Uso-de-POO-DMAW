@@ -6,6 +6,7 @@
 package lab1;
 
 import Ejercicio1.clases.cRaices;
+import UI.Interfaz;
 
 /**
  *
@@ -19,8 +20,12 @@ public class Lab1 {
     public static void main(String[] args) {
         
         //Ejemplo sacado de https://www.youtube.com/watch?v=BxrJmKdPHRs
-        System.out.println("Respuestas: x1: "+ new cRaices().calcularRaices(2, 9, 10)[0]+
-                " x2:"+new cRaices().calcularRaices(2, 9, 10)[1]);
+        //System.out.println("Respuestas: x1: "+ new cRaices().calcularRaices(2, 9, 10)[0]+
+                //" x2:"+new cRaices().calcularRaices(2, 9, 10)[1]);
+        Interfaz interfaz = new Interfaz();
+        interfaz.setTitle("Laboratorio 1 DMAW");
+        interfaz.setLocationRelativeTo(null);
+        interfaz.setVisible(true);
     }
     
 }

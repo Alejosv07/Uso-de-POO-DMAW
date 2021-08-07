@@ -23,7 +23,7 @@ public class cCalculadora {
     
     //Funcion division
     public double dividir(double n1,double n2){
-        return n1+n2;
+        return n1/n2;
     }
     
     //Funcion multiplicacion
