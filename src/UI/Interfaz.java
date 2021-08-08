@@ -494,7 +494,7 @@ public class Interfaz extends javax.swing.JFrame {
                 break;
             case 2:
                 try{
-                  JOptionPane.showMessageDialog(rootPane, "X1: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
+                    JOptionPane.showMessageDialog(rootPane, "X1: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
                         Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText()))[0] + "\n" +
                         "X2: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
                         Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText()))[1],
