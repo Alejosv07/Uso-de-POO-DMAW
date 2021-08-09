@@ -18,6 +18,10 @@ public class RectanguloAreaPerimetroImp extends FiguraGeometrica implements ICal
     //Constructores
     public RectanguloAreaPerimetroImp() {
     }
+    
+    public RectanguloAreaPerimetroImp(double longitud) {    
+        super(longitud);
+    }
 
     //Get and set
     public double getAncho() {
