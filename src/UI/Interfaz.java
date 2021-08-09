@@ -38,7 +38,6 @@ public class Interfaz extends javax.swing.JFrame {
         this.jTextFieldC.setEnabled(false);
         this.jTextFieldAltura.setEnabled(false);
         this.jLabel8.setEnabled(false);
-        this.jLabel9.setText("");
     }
 
     public int indiceCombo = 0;
@@ -81,7 +80,6 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jTextFieldAltura = new javax.swing.JTextField();
         jButtonCalcularFigura = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -338,9 +336,6 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
-        jLabel9.setText("El area es:");
-
         jButton1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jButton1.setText("Perimetro");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -370,9 +365,6 @@ public class Interfaz extends javax.swing.JFrame {
                                     .addGap(18, 18, 18)
                                     .addComponent(jTextFieldAltura, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(jLabel9))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(191, 191, 191)
                         .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -392,9 +384,7 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonCalcularFigura)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jLabel9)
-                .addGap(131, 131, 131))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -753,7 +743,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
