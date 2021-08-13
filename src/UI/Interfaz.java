@@ -613,13 +613,21 @@ public class Interfaz extends javax.swing.JFrame {
                 break;
             case 2:
                 try{
-                    JOptionPane.showMessageDialog(rootPane, "X1: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
+                    if (raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
+                        Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText())).length == 1){
+                        JOptionPane.showMessageDialog(rootPane, "X1: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
+                        Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText()))[0],
+                        "Raices", JOptionPane.INFORMATION_MESSAGE); 
+                    } else {
+                        JOptionPane.showMessageDialog(rootPane, "X1: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
                         Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText()))[0] + "\n" +
                         "X2: " + raices.calcularRaices(Double.parseDouble(this.jTextFieldA.getText()),
                         Double.parseDouble(this.jTextFieldB.getText()), Double.parseDouble(this.jTextFieldC.getText()))[1],
-                        "Raices", JOptionPane.INFORMATION_MESSAGE);   
+                        "Raices", JOptionPane.INFORMATION_MESSAGE); 
+                    }
+                     
                 } catch (Exception e){
-                    JOptionPane.showMessageDialog(rootPane, "No se puede operar", "Atencion", HEIGHT);
+                    JOptionPane.showMessageDialog(rootPane, "Ingrese los valores correspondientes", "Atencion", HEIGHT);
                 }
                 break;    
             default:

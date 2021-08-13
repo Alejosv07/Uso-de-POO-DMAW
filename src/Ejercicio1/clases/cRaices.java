@@ -12,7 +12,7 @@ package Ejercicio1.clases;
 public class cRaices extends cCalculadora{
     
     //Funcion para encontrar raices por formula general
-    public double[] calcularRaices(double a, double b,double c){
+    public String[] calcularRaices(double a, double b,double c){
         /*
             Teniendo en cuenta los siguientes casos
             b. Si a y b son iguales a 0 deberá mostrar el mensaje ecuación degenerada.
@@ -27,12 +27,12 @@ public class cRaices extends cCalculadora{
         */
         if (a==0 && b==0) {
             //b
-            return new double[]{-1};
+            return new String[]{"Ecuacion degenerada"};
         }
         if (a==0 && b!=0) {
             //c
             //–c/b
-            return new double[]{(-c/b)};
+            return new String[]{String.valueOf((-c/b))};
         }
         
         //d
@@ -50,14 +50,14 @@ public class cRaices extends cCalculadora{
         */
         if (discriminante>=0) {
             //Raices reales
-            double rRaices[] = new double[2];
+            String rRaices[] = new String[2];
             
-            rRaices[0] = (-b + (Math.sqrt(discriminante)))/(2*a);
-            rRaices[1] = (-b - (Math.sqrt(discriminante)))/(2*a);
+            rRaices[0] = String.valueOf((-b + (Math.sqrt(discriminante)))/(2*a));
+            rRaices[1] = String.valueOf((-b - (Math.sqrt(discriminante)))/(2*a));
             
             return rRaices;
-        }
+        } 
         
-        return new double[]{-1};
+        return new String[]{"No se puede operar"};
     }
 }
